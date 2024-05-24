@@ -161,3 +161,6 @@ cython_debug/
 
 books
 images
+packages
+books_parameters.json
+pages
