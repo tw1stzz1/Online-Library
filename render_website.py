@@ -37,4 +37,4 @@ on_reload()
 
 server = Server()
 server.watch('template.html', on_reload())
-server.serve(root='.')
+server.serve(root='.', default_filename="pages/index1.html")
