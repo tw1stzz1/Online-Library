@@ -13,18 +13,17 @@
     <title>Online-library</title>
   </head>
   <body>
-
     <nav aria-label="Page navigation example">
       <ul class="pagination justify-content-center">
         {% if page_number==1 %}
         <li class="page-item disabled">
-          <a class="page-link" href="index{{page_number-1}}.html" tabindex="-1" aria-disabled="true" aria-label="Previous">
+          <a class="page-link" href="../pages/index{{page_number-1}}.html" tabindex="-1" aria-disabled="true" aria-label="Previous">
             <span aria-hidden="true">Назад</span>
           </a>
         </li>
         {% else %}
         <li class="page-item">
-          <a class="page-link" href="index{{page_number-1}}.html" aria-label="Previous">
+          <a class="page-link" href="../pages/index{{page_number-1}}.html" aria-label="Previous">
             <span aria-hidden="true">Назад</span>
           </a>
         </li>
@@ -32,21 +31,21 @@
         {% for page in range(1, pages+1) %}
         {% if page_number==page %}
         <li class="page-item active" aria-current="page">
-          <a class="page-link" href="index{{page}}.html">{{page}}<span class="sr-only">(current)</span></a>
+          <a class="page-link" href="../pages/index{{page}}.html">{{page}}<span class="sr-only">(current)</span></a>
         </li>
         {% else %}
-        <li class="page-item"><a class="page-link" href="index{{page}}.html">{{page}}</a></li>
+        <li class="page-item"><a class="page-link" href="../pages/index{{page}}.html">{{page}}</a></li>
         {% endif %}
         {% endfor %}
         {% if page_number==pages %}
         <li class="page-item disabled">
-          <a class="page-link" href="index{{page_number+1}}.html" tabindex="-1" aria-disabled="true" aria-label="Next">
+          <a class="page-link" href="../pages/index{{page_number+1}}.html" tabindex="-1" aria-disabled="true" aria-label="Next">
             <span aria-hidden="true">Вперед</span>
           </a>
         </li>
         {% else %}
         <li class="page-item">
-          <a class="page-link" href="index{{page_number+1}}.html" aria-label="Next">
+          <a class="page-link" href="../pages/index{{page_number+1}}.html " aria-label="Next">
             <span aria-hidden="true">Вперед</span>
           </a>
         </li>
