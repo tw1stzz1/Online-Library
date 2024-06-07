@@ -30,6 +30,21 @@ Serving on http://127.0.0.1:5500
 Редактировать сайт вы можете в файле `template.html`.
 Входные данные берутся из файла `books_parameters.json`
 
+### Аргументы
+#### book_parameters
+Позволяет указать путь до файла с информацией о книгах
+```
+python .\render_website.py --book_parameters ваш путь до файла с информацией о книгах
+```
+#### html_template
+Позволяет указать путь до вашего html-шаблона
+```
+python .\render_website.py --html_template ваш путь до html-шаблона
+```
+#### folder_with_pages
+Позволяет указать путь до папки со страницами сайта
+```
+python .\render_website.py --folder_with_pages ваш путь до папки со страницами сайта
+```
 ### Цель проекта
-
 Код написан в образовательных целях на онлайн-курсе для веб-разработчиков [dvmn.org](https://dvmn.org/).
