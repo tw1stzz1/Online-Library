@@ -13,6 +13,7 @@ parser.add_argument('--html_template', default='template.html', help='Relative p
 parser.add_argument('--folder_with_pages', default='pages', help='Relative path to the folder were your pages')
 args = parser.parse_args()
 
+
 def on_reload():
     with open(args.book_parameters, 'r', encoding='utf8') as my_file:
         books = json.load(my_file)
